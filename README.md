@@ -7,6 +7,22 @@ Get [Brave Search](https://search.brave.com) search suggestions and results in R
 - Results directly in Raycast
 - Search suggestions while you type
 - History of your searches
+- Filter the current result set without a new Brave query
+- AI page summaries (Jina Reader + Raycast AI)
+- Copy results as markdown links
+
+# Shortcuts (web results)
+
+| Shortcut | Action |
+| --- | --- |
+| `↵` | Open the result in the browser |
+| `⌘F` | Filter current results (title, snippet, URL). `⌘F` again restores them |
+| `⌘⇧S` | Summarize the page |
+| `⌘⇧L` | Copy a markdown link (`[title](url)`) |
+| `⌘C` | Copy URL |
+| `⌘⇧C` | Copy title |
+
+Summarize and Copy Markdown Link are also available from the summary view. Summarize uses [Raycast AI](https://www.raycast.com/core-features/ai) (Pro / trial messages).
 
 # Setup
 
