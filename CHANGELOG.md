@@ -1,4 +1,12 @@
-# Brave Search with Results Changelog
+# Brave Search Enhanced Changelog
+
+## [Unreleased]
+
+- Forked as a private extension named Brave Search Enhanced
+- Filter mode: ⌘F toggles local filtering of current results (title, snippet, URL), with match count
+- ⌘⇧S "Summarize Page": fetches the page via Jina Reader and streams an AI summary (Raycast AI)
+- Copy Markdown Link (⌘⇧L) on results and summary views
+- Clean HTML tags and entities from Brave titles and snippets
 
 ## [Updated Images] - 2025-09-02
 

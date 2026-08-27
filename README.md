@@ -1,4 +1,4 @@
-# Brave Search with Results
+# Brave Search Enhanced
 
 Get [Brave Search](https://search.brave.com) search suggestions and results in Raycast using the APIs of Brave.
 

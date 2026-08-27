@@ -2,6 +2,8 @@ import { useMemo } from "react";
 import { getPreferenceValues } from "@raycast/api";
 import { useFetch } from "@raycast/utils";
 
+import cleanHtml from "../utils/cleanHtml.js";
+
 const ENDPOINT = new URL("https://api.search.brave.com/res/v1/web/search");
 
 interface ApiWebSearchData {
@@ -14,6 +16,7 @@ interface ApiWebSearchResult {
   type: string;
   title: string;
   url: string;
+  description: string;
   meta_url: {
     favicon: string;
   };
@@ -23,6 +26,7 @@ interface WebSearchResult {
   id: string;
   icon: string;
   title: string;
+  description: string;
   url: URL;
 }
 
@@ -30,7 +34,8 @@ const toResult = (result: ApiWebSearchResult): WebSearchResult => {
   return {
     id: "web" + result.type + result.url,
     icon: result.meta_url.favicon,
-    title: result.title,
+    title: cleanHtml(result.title),
+    description: cleanHtml(result.description),
     url: new URL(result.url),
   };
 };
